@@ -7,6 +7,7 @@ def random_graph(N, M, base_index=1):
 
     N: the number of vertexes
     M: the number of edegs
+    base_index: 0 or 1
     !!note: M should be less than or equal the numer of complete graph edges
     E: edges
     """
