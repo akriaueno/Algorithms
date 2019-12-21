@@ -5,7 +5,7 @@ Order by digree and find clique.
 ref R Carraghan, PM Pardalos - Operations Research Letters, 1990
 
 N: the number of vertexes
-N: the number of edges
+M: the number of edges
 G: adjlist
 """
 import copy
