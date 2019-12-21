@@ -29,6 +29,6 @@ def random_graph(N, M, base_index=1):
         print(*e)
 
 
-if __name__ == '__init__':
+if __name__ == '__main__':
     N, M = map(int, input().split())
     random_graph(N, M)
