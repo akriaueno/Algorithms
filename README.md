@@ -1,2 +1,2 @@
-# alg
+# Algorithms
 Algorithms
