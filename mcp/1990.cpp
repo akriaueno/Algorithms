@@ -9,7 +9,7 @@
 
 #include<cstdio>
 #include<vector>
-#include<set>
+#include<unordered_set>
 #include<tuple>
 #include<algorithm>
 using namespace std;
@@ -17,16 +17,16 @@ using namespace std;
 int main () {
   int N, M;
   scanf("%d %d", &N, &M);
-  vector<set<int>> G(N, set<int>());
+  vector<unordered_set<int>> G(N, unordered_set<int>());
   for (int i = 0; i < M; ++i) {
     int v1, v2;
     scanf("%d %d", &v1, &v2);
     G[v1-1].insert(v2-1);
     G[v2-1].insert(v1-1);
   }
-  vector<set<int>> tmpG(G);
+  vector<unordered_set<int>> tmpG(G);
   vector<int> vs;
-  set<int> not_used;
+  unordered_set<int> not_used;
   for (int i = 0; i < N; ++i) not_used.insert(i);
   while (!not_used.empty()) {
     int min_degree_v = *min_element(not_used.begin(), not_used.end(), [&G](int x, int y) {
@@ -44,10 +44,10 @@ int main () {
     int cur = get<1>(stack.back());
     int depth = get<2>(stack.back());
     stack.pop_back();
-    if (cur >= vs.size())
+    if (cur >= (int)vs.size())
       continue;
     stack.push_back({vs, cur + 1, depth});
-    if (depth + (vs.size() - 1 - cur) <= cbc)
+    if (depth + ((int)vs.size() - 1 - cur) <= cbc)
       continue;
     cbc = max(cbc, depth);
     vector<int> new_vs;
