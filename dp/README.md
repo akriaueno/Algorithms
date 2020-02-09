@@ -1,6 +1,6 @@
-# DP
-## $B7e(BDP
-digit.py
+# Dynamic Programming
+## 桁DP
+[digit.py](./digit.py)
 
-$BLdBj(B: https://atcoder.jp/contests/abc154/tasks/abc154_e
-
+- 問題: https://atcoder.jp/contests/abc154/tasks/abc154_e
+- 参考: https://qiita.com/pinokions009/items/1e98252718eeeeb5c9ab
