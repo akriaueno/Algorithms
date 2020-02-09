@@ -2,7 +2,7 @@ N = int(input())
 K = int(input())
 n = list(map(int, str(N)))
 l = len(n)
-dp = [[[0] * (K + 2) for __ in range(2)] for _ in range(l + 1)]  # j$B$NA+0\$G$O$_=P$7$&$k$+$i(BK+2
+dp = [[[0] * (K + 2) for __ in range(2)] for _ in range(l + 1)]  # K+2にする
 dp[0][0][0] = 1
 for i in range(l):
     for smaller in range(2):
