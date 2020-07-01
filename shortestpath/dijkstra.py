@@ -5,7 +5,7 @@ INF = 10**10  # must bigger than shortest distance
 def dijkstra(s, G):
     """
     Args:
-        s (int): start vertex
+        s (int) : start vertex
         G (list): adjecency list (to, cost)
 
     Returns:
